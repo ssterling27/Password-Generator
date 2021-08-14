@@ -1,0 +1,30 @@
+.row1 {
+  margin-top: 20px;
+}
+
+body  {
+  background-color: #D4D9ED;
+}
+
+.row2 {
+  background-color: #C5C3E9
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-label {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.row3 {
+  padding-top: 30px;
+}
+
+#characterInput {
+  width: 50px;
+}
