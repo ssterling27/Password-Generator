@@ -40,7 +40,7 @@
       userFormElem.innerHTML = `
       <form id="inputForm">
         <section class="mb-3">
-          <label for="characterInput" class="form-label">Number of Characters (8 - 28 only)</label>
+          <label for="characterInput" class="form-label">Number of Characters (8 - 128)</label>
           <input type="text" class="form-control" id="characterInput">
         </section>
         <section>
@@ -109,7 +109,7 @@
         } else {
           specialCharacters = ''
         }
-        if (characterInput >= 8 &&characterInput <= 28) {
+        if (characterInput >= 8 &&characterInput <= 128) {
         const num = characterInput;
         const randomString = (len = 1) => {
           let charSet =
@@ -126,7 +126,7 @@
         let userPassword = document.createElement(`div`)
         userPassword.classList = 'center'
         userPassword.innerHTML = `
-        <div class="card" style="width: 30rem;">
+        <div class="card" style="width: 100%;">
           <div class="card-body">
             <p class="card-text center">Your New Password Is:</p>
             <h5 class="card-title center">${randomString(num)}</h5>
